@@ -1,0 +1,429 @@
+{% include"nav.html"%}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: times-new-roman;
+  font-weight:bold;
+  font-color:black;
+  padding: 20px;
+  background:pinkish;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: violet;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 65%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 35%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: teal;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color:lightpink;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: crimson;
+  margin-top: 20px;
+}
+h2{
+  color:black;
+
+}
+h1{
+  color:indigo;
+  font-size:60px;
+  font-weight:45px;
+  font-family:algerian;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+    {%if a == "HARDDISK"%}
+<div class="header">
+  
+</div>
+
+    
+
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <font color="Green"><h2>Predicted Results: {{ a }} </h2> <h3>Confidence : {{ b }}</h3></font>
+     <!--- <font color="red"><h5>Confidence : {{ b }}</h5></font>-->
+      <div class="fakeimg" style="height:300px;"><img src="/static/10.jpg/" ></div>
+      <div> <font color="black">CLUSTER VALUE: 
+        {{ c }}</font></div>
+      </div>
+    
+    <div class="card">
+      <h2><b> </b></h2>
+      <h5> </h5>
+      <h2></h2>
+       
+      <ol>
+      
+        
+      </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      
+          <h2>P C PARTS DEFINIES</h2>
+      
+   
+      <h2></h2>
+  
+   <ol>
+    <li>HARDDISK
+      Definition: Also known as a Hard Disk Drive (HDD), it is a data storage device that uses magnetic storage to store and retrieve digital information.
+      Purpose: It is used to store the operating system, software applications, and files. Hard disks are known for their large storage capacities and relatively low cost compared to Solid State Drives (SSDs).
+      Characteristics:
+      Storage Capacity: Ranges from hundreds of gigabytes (GB) to several terabytes (TB).
+      Speed: Slower compared to SSDs due to mechanical parts.
+      Appearance: Typically a rectangular box with a metal enclosure. It has connectors for power and data cables.</li>
+   <li> RAM (Random Access Memory)
+    Definition: RAM is a type of volatile memory that provides high-speed data access to the CPU and is used for storing data that is actively being used or processed.
+    Purpose: It allows the computer to quickly access data needed for running applications and processes, improving the overall performance and speed.
+    Characteristics:
+    Volatility: Loses its data when the computer is powered off.
+    Speed: Very fast compared to HDDs and SSDs.
+    Appearance: Typically in the form of sticks or modules that are inserted into the motherboard. These modules are rectangular with several chips on them.</li>
+<li>CABLES
+  Definition: Cables are physical connectors that transmit data and power between various components of a computer system.
+  Purpose: They are essential for connecting components like hard disks, motherboards, power supplies, and external devices.
+  Types:
+  Data Cables: Such as SATA cables (for connecting HDDs and SSDs), USB cables (for peripherals), and Ethernet cables (for network connections).
+  Power Cables: Used to supply power to components from the power supply unit (PSU).
+  Appearance: Can vary widely in form, including thin, flexible wires with connectors at each end.</li>
+
+<li>CASES
+  Definition: The computer case (or chassis) is the enclosure that houses all the internal components of a computer, such as the motherboard, power supply, storage devices, and cooling systems.
+  Purpose: It provides physical protection for the components, facilitates airflow for cooling, and organizes the components for easier access and maintenance.
+  Characteristics:
+  Form Factor: Comes in different sizes and shapes, such as ATX, Micro-ATX, and Mini-ITX.
+  Material: Can be made from metal, plastic, or a combination of materials.
+  Appearance: Usually a large rectangular box with openings for ventilation, ports, and drive bays.</li>
+<li>Keyboard
+  Definition: A keyboard is an input device that uses keys or buttons to allow the user to input text and commands into a computer.
+  Purpose: It is the primary method of typing text and interacting with software applications. Keyboards can also include special keys for functions like media control, volume adjustment, and shortcuts.
+  Characteristics:
+  Layout: Typically includes alphanumeric keys, function keys, and control keys.
+  Types: Can be wired or wireless, and may use different switch types like mechanical or membrane.
+  Appearance: Usually a rectangular, flat device with keys arranged in a grid pattern.</li>
+
+
+
+    
+   </ol>    </div>
+    
+    <div class="card">
+      <h3>CREATION OF PROJECT</h3>
+      <p>
+        PROJECT BY:Akhila N</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  
+  <h3>THANK YOU</h3>
+</div>
+{%endif%}
+{%if a == "cables"%}
+<div class="header">
+  <h1></h1>
+</div>
+
+    
+
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <font color="Green"><h2>Predicted Results: {{ a }} </h2> <h3>Confidence : {{ b }}</h3></font>
+     <!---<font color="red"><h5>Confidence : {{ b }}</h5></font>-->
+      <div class="fakeimg" style="height:300px;"><img src="/static/1.JPG/" ></div>
+      </div>
+    
+    <div class="card">
+      </div>
+  </div>
+  <div class="rightcolumn">
+    <h2>P C PARTS DEFINIES</h2>
+      
+   
+      <h2></h2>
+  
+   <ol>
+    <li>HARDDISK
+      Definition: Also known as a Hard Disk Drive (HDD), it is a data storage device that uses magnetic storage to store and retrieve digital information.
+      Purpose: It is used to store the operating system, software applications, and files. Hard disks are known for their large storage capacities and relatively low cost compared to Solid State Drives (SSDs).
+      Characteristics:
+      Storage Capacity: Ranges from hundreds of gigabytes (GB) to several terabytes (TB).
+      Speed: Slower compared to SSDs due to mechanical parts.
+      Appearance: Typically a rectangular box with a metal enclosure. It has connectors for power and data cables.</li>
+   <li> RAM (Random Access Memory)
+    Definition: RAM is a type of volatile memory that provides high-speed data access to the CPU and is used for storing data that is actively being used or processed.
+    Purpose: It allows the computer to quickly access data needed for running applications and processes, improving the overall performance and speed.
+    Characteristics:
+    Volatility: Loses its data when the computer is powered off.
+    Speed: Very fast compared to HDDs and SSDs.
+    Appearance: Typically in the form of sticks or modules that are inserted into the motherboard. These modules are rectangular with several chips on them.</li>
+<li>CABLES
+  Definition: Cables are physical connectors that transmit data and power between various components of a computer system.
+  Purpose: They are essential for connecting components like hard disks, motherboards, power supplies, and external devices.
+  Types:
+  Data Cables: Such as SATA cables (for connecting HDDs and SSDs), USB cables (for peripherals), and Ethernet cables (for network connections).
+  Power Cables: Used to supply power to components from the power supply unit (PSU).
+  Appearance: Can vary widely in form, including thin, flexible wires with connectors at each end.</li>
+
+<li>CASES
+  Definition: The computer case (or chassis) is the enclosure that houses all the internal components of a computer, such as the motherboard, power supply, storage devices, and cooling systems.
+  Purpose: It provides physical protection for the components, facilitates airflow for cooling, and organizes the components for easier access and maintenance.
+  Characteristics:
+  Form Factor: Comes in different sizes and shapes, such as ATX, Micro-ATX, and Mini-ITX.
+  Material: Can be made from metal, plastic, or a combination of materials.
+  Appearance: Usually a large rectangular box with openings for ventilation, ports, and drive bays.</li>
+<li>Keyboard
+  Definition: A keyboard is an input device that uses keys or buttons to allow the user to input text and commands into a computer.
+  Purpose: It is the primary method of typing text and interacting with software applications. Keyboards can also include special keys for functions like media control, volume adjustment, and shortcuts.
+  Characteristics:
+  Layout: Typically includes alphanumeric keys, function keys, and control keys.
+  Types: Can be wired or wireless, and may use different switch types like mechanical or membrane.
+  Appearance: Usually a rectangular, flat device with keys arranged in a grid pattern.</li>
+
+
+
+    
+   </ol>    </div>
+    
+    <div class="card">
+      <h3>CREATION OF PROJECT</h3>
+      <p>
+        PROJECT BY:Akhila N</p>
+    </div>
+  </div>
+</div>
+
+{%endif%}
+{%if a == "cases"%}
+<div class="header">
+  <h1><b></b></h1>
+</div>
+
+    
+
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <font color="Green"><h2>Predicted Results: {{ a }} </h2><h3>Confidence : {{ b }}</h3></font>
+     <!--- <font color="red"><h5>Confidence : {{ b }} </h5></font>-->
+      <div class="fakeimg" style="height:300px;"><img src="/static/270.JPG/" > </div>
+      <div> <font color="black">CLUSTER VALUE: {{ c }}</font></div>
+      <div></div>
+      </div>
+    
+    <div class="card">
+      </div>
+  </div>
+  <div class="rightcolumn">
+    <h2>P C PARTS DEFINIES</h2>
+      
+   
+      <h2></h2>
+  
+   <ol>
+    <li>HARDDISK
+      Definition: Also known as a Hard Disk Drive (HDD), it is a data storage device that uses magnetic storage to store and retrieve digital information.
+      Purpose: It is used to store the operating system, software applications, and files. Hard disks are known for their large storage capacities and relatively low cost compared to Solid State Drives (SSDs).
+      Characteristics:
+      Storage Capacity: Ranges from hundreds of gigabytes (GB) to several terabytes (TB).
+      Speed: Slower compared to SSDs due to mechanical parts.
+      Appearance: Typically a rectangular box with a metal enclosure. It has connectors for power and data cables.</li>
+   <li> RAM (Random Access Memory)
+    Definition: RAM is a type of volatile memory that provides high-speed data access to the CPU and is used for storing data that is actively being used or processed.
+    Purpose: It allows the computer to quickly access data needed for running applications and processes, improving the overall performance and speed.
+    Characteristics:
+    Volatility: Loses its data when the computer is powered off.
+    Speed: Very fast compared to HDDs and SSDs.
+    Appearance: Typically in the form of sticks or modules that are inserted into the motherboard. These modules are rectangular with several chips on them.</li>
+<li>CABLES
+  Definition: Cables are physical connectors that transmit data and power between various components of a computer system.
+  Purpose: They are essential for connecting components like hard disks, motherboards, power supplies, and external devices.
+  Types:
+  Data Cables: Such as SATA cables (for connecting HDDs and SSDs), USB cables (for peripherals), and Ethernet cables (for network connections).
+  Power Cables: Used to supply power to components from the power supply unit (PSU).
+  Appearance: Can vary widely in form, including thin, flexible wires with connectors at each end.</li>
+
+<li>CASES
+  Definition: The computer case (or chassis) is the enclosure that houses all the internal components of a computer, such as the motherboard, power supply, storage devices, and cooling systems.
+  Purpose: It provides physical protection for the components, facilitates airflow for cooling, and organizes the components for easier access and maintenance.
+  Characteristics:
+  Form Factor: Comes in different sizes and shapes, such as ATX, Micro-ATX, and Mini-ITX.
+  Material: Can be made from metal, plastic, or a combination of materials.
+  Appearance: Usually a large rectangular box with openings for ventilation, ports, and drive bays.</li>
+<li>Keyboard
+  Definition: A keyboard is an input device that uses keys or buttons to allow the user to input text and commands into a computer.
+  Purpose: It is the primary method of typing text and interacting with software applications. Keyboards can also include special keys for functions like media control, volume adjustment, and shortcuts.
+  Characteristics:
+  Layout: Typically includes alphanumeric keys, function keys, and control keys.
+  Types: Can be wired or wireless, and may use different switch types like mechanical or membrane.
+  Appearance: Usually a rectangular, flat device with keys arranged in a grid pattern.</li>
+
+
+
+    
+   </ol>    </div>
+    
+    <div class="card">
+      <h3>CREATION OF PROJECT</h3>
+      <p>
+        PROJECT BY:Akhila N</p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  
+  <h3>THANK YOU</h3>
+  
+</div>
+{%endif%}
+    
+{%if a == "keyboard"%}
+<div class="header">
+  <h1></h1>
+</div>
+
+    
+
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <font color="Green"><h2>Predicted Results: {{ a }} </h2><h3>Confidence : {{ b }} </h3></font>
+      <!--<font color="red"><h5>Confidence : {{ b }} </h5></font>-->
+      <div class="fakeimg" style="height:300px;"><img src="/static/86.JPG/" > </div>
+      <div> <font color="black">CLUSTER VALUE: {{ c }}</font></div>
+      <div></div>
+      </div>
+    
+    <div class="card">
+      </div>
+  </div>
+  <li>HARDDISK
+    Definition: Also known as a Hard Disk Drive (HDD), it is a data storage device that uses magnetic storage to store and retrieve digital information.
+    Purpose: It is used to store the operating system, software applications, and files. Hard disks are known for their large storage capacities and relatively low cost compared to Solid State Drives (SSDs).
+    Characteristics:
+    Storage Capacity: Ranges from hundreds of gigabytes (GB) to several terabytes (TB).
+    Speed: Slower compared to SSDs due to mechanical parts.
+    Appearance: Typically a rectangular box with a metal enclosure. It has connectors for power and data cables.</li>
+ <li> RAM (Random Access Memory)
+  Definition: RAM is a type of volatile memory that provides high-speed data access to the CPU and is used for storing data that is actively being used or processed.
+  Purpose: It allows the computer to quickly access data needed for running applications and processes, improving the overall performance and speed.
+  Characteristics:
+  Volatility: Loses its data when the computer is powered off.
+  Speed: Very fast compared to HDDs and SSDs.
+  Appearance: Typically in the form of sticks or modules that are inserted into the motherboard. These modules are rectangular with several chips on them.</li>
+<li>CABLES
+Definition: Cables are physical connectors that transmit data and power between various components of a computer system.
+Purpose: They are essential for connecting components like hard disks, motherboards, power supplies, and external devices.
+Types:
+Data Cables: Such as SATA cables (for connecting HDDs and SSDs), USB cables (for peripherals), and Ethernet cables (for network connections).
+Power Cables: Used to supply power to components from the power supply unit (PSU).
+Appearance: Can vary widely in form, including thin, flexible wires with connectors at each end.</li>
+
+<li>CASES
+Definition: The computer case (or chassis) is the enclosure that houses all the internal components of a computer, such as the motherboard, power supply, storage devices, and cooling systems.
+Purpose: It provides physical protection for the components, facilitates airflow for cooling, and organizes the components for easier access and maintenance.
+Characteristics:
+Form Factor: Comes in different sizes and shapes, such as ATX, Micro-ATX, and Mini-ITX.
+Material: Can be made from metal, plastic, or a combination of materials.
+Appearance: Usually a large rectangular box with openings for ventilation, ports, and drive bays.</li>
+<li>Keyboard
+Definition: A keyboard is an input device that uses keys or buttons to allow the user to input text and commands into a computer.
+Purpose: It is the primary method of typing text and interacting with software applications. Keyboards can also include special keys for functions like media control, volume adjustment, and shortcuts.
+Characteristics:
+Layout: Typically includes alphanumeric keys, function keys, and control keys.
+Types: Can be wired or wireless, and may use different switch types like mechanical or membrane.
+Appearance: Usually a rectangular, flat device with keys arranged in a grid pattern.</li>
+
+
+
+  
+ </ol>    </div>
+  
+  <div class="card">
+    <h3>CREATION OF PROJECT</h3>
+    <p>
+      PROJECT BY:Akhila N</p>
+  </div>
+</div>
+</div>
+<div class="footer">
+
+<h3>THANK YOU</h3>
+
+</div>
+  
+</div>
+{%endif%}
+
+
+</body>
+</html>

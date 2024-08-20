@@ -1,0 +1,23 @@
+{% include"nav.html"%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="/static/style.css">
+	<title>Input Image With Preview Image</title>
+</head>
+<body>
+	<div id="drop-zone">
+    <form action="/predict" method="post" enctype="multipart/form-data">
+    <img src="/static/PLANT.jpg" height="900" width="2100" align="right"></img>
+    <p>Drop file or click to upload</p>
+    <input type="file" id="file" name="file" hidden>
+</div>
+  
+  <input type="submit" value="Submit">
+</form>
+	<script src="/static/script.js"></script>
+</body>
+</html>

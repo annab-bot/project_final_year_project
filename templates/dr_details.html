@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up | By Code Info</title>
+    <link rel="stylesheet" href="/static/login_style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Doctor Details</h1>
+      <h4></h4>
+      <form action="/dr_insert" method="post">
+        <label>Email</label>
+        <input type="text" placeholder="" name="email" />
+        <label>Name</label>
+        <input type="email" placeholder="" name="username" />
+        <label>Password</label>
+        <input type="password" placeholder="" name="password" />
+        <label>Mobile No</label>
+        <input type="number" placeholder="" name="mobileno" />
+        <label>Address</label>
+        <input type="text" placeholder="" name="address" />
+        <label>Hospital Name</label>
+        <input type="text" placeholder="" name="hospital_name" />
+        <label>Qualification</label>
+        <input type="text" placeholder="" name="qualification" />
+        <label>Specialization</label>
+        <input type="text" placeholder="" name="specialization" />
+        <input type="submit" value="Submit" />
+      <closeform></closeform></form>
+      <p>
+        By clicking the Sign Up button,you agree to our <br />
+        <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+      </p>
+    </div>
+    <p class="para-2">
+      Already have an account? <a href="login.html">Login here</a>
+    </p>
+  </body>
+</html>
